@@ -1,0 +1,12 @@
+body {
+    background-color: #182139;
+}
+
+.main {
+    background-color: white;
+    width: 50%;
+    margin: 10px auto;
+    min-height: 90vh;
+    box-shadow: -20px 20px 20px black;
+    border-radius: 20px;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samkary Parmaga</title>
+    <link rel="icon" href="./img/logo-website.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">
+                <img src="./img/logo.png" class="img-fluid" id="logo" alt="logo-website">
+            </a>
+            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="navbar-collapse collapse text-center" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link fs-5 link1">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link fs-5 link1" >About Us</a></li>
+                    <li class="nav-item"><a href="#levels" class="nav-link fs-5 link1" >Levels</a></li>
+                    <li class="nav-item"><a href="#python" class="nav-link fs-5 link2" >Python</a></li>
+                    <li class="nav-item"><a href="./contact us/contact us.html" class="nav-link fs-5 link2" target="_blank">Contact Us</a></li>
+                    <li class="nav-item"><a href="./Feedback/Feedback.html" class="nav-link fs-5 link2" target="_blank">Feedback</a></li>
+                    <li class="nav-item position-relative">
+                        <img src="./log in/img/male-removebg-preview.png" alt="profile" id="profile_image" class="img-fluid profile-img" onclick="showprofile()">
+                        <div class="profile-box bg-light p-3 text-center rounded shadow">
+                            <h5 id="profile_name"></h5>
+                            <h6 id="profile_email"></h6>
+                        </div>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="section1">
+        <div class="container py-5 my-5 ">
+            <h1 class="display-3  fw-bold">
+                Samkary  Parmaga
+            </h1>
+            <p class="">you can learn python easy here where you <br> will know all you want to know and it makes you a
+                profesional </p>
+            <a target="_blank" href="./log in/login.html" class="btn btn-lg btn_head">Get Started</a>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container">
+        <!-- section about us -->
+        <section id="about" class="py-5 my-5">
+            <div class="container  text-light p-5">
+                <h1 class="text-center my-5 fw-bolder">About Us</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./img/image.jpg" class="img-fluid rounded" alt="ABout Us">
+                    </div>
+                    <div class="col-lg-6 align-content-center">
+                        <h2 class="fs-1 fw-bolder">Who We?</h2>
+                        <p>
+                            We are the "Samkary Parmaga" team – a group of enthusiastic young people united by one goal: to simplify the Python language for anyone who wants to learn it.
+                            Together, we work to provide clear, organized, and beginner-friendly educational content, with a focus on practical explanations and a smooth approach.
+                            Everyone on the team adds real value, from preparing lessons and designing tutorials to continuous follow-up and support for learners.
+                            We believe that programming doesn't have to be difficult, and that's why "Samkary Parmaga" exists!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section levels -->
+        <section class="section2 text-center" id="levels">
+            <div class="container-fluid blue-bg">
+            <div class="container">
+                <h2 class="pb-3 pt-2 text-center">Levels</h2>
+            
+                <!-- Step 1 -->
+                <div class="row align-items-center how-it-works">
+                <div class="col-2 text-center bottom">
+                    <div class="circle">1</div>
+                </div>
+                <div class="col-6">
+                    <h5>Level1</h5>
+                    <p>At this level you will learn some of the basics of learning any programming language.</p>
+                    <a href="./level1/lesson1/level1 lesson1.html" class="btn btn_head" >Start Now</a>
+                </div>
+                </div>
+            
+                <!-- Line 1-2 -->
+                <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                </div>
+                </div>
+            
+                <!-- Step 2 -->
+                <div class="row align-items-center justify-content-end how-it-works">
+                <div class="col-6 text-right">
+                    <h5>Level2</h5>
+                    <p>At this level, you will learn some commands to run a program that calculates whether a number is odd or even.</p>
+                    <a href="" onclick="messagelevel1()" class="btn_head btn">Start Now</a>
+                </div>
+                <div class="col-2 text-center full">
+                    <div class="circle">2</div>
+                </div>
+                </div>
+            
+                <!-- Line 2-3 -->
+                <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <div class="corner top-left"></div>
+                </div>
+                </div>
+            
+                <!-- Step 3 -->
+                <div class="row align-items-center how-it-works ">
+                <div class="col-2 bottom third ">
+                    <div class="circle">3</div>
+                </div>
+                <div class="col-6 ">
+                    <h5>Level3</h5>
+                    <p>At this level you will learn how to save data, how to retrieve it, how to add it and how to delete a specific item.</p>
+                    <a href="" onclick="messagelevel2()" class="btn btn_head">Start Now</a>
+                </div>
+                
+                
+            
+                <!-- Line 3-4 -->
+                <div class="row timeline">
+                <div class="col-2">
+                    <div class="corner top-right-2 "></div>
+                </div>
+                <div class="col-8">
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <div class="corner left-bottom "></div>
+                </div>
+                </div>
+            
+                <!-- Step 4 -->
+                <div class="row align-items-center justify-content-end how-it-works">
+                    <div class="col-6 text-right">
+                        <h5>Level4</h5>
+                        <p>At this level you will learn other ways to save data and how to reduce your time and organize your code.</p>
+                        <a href="" onclick="messagelevel3()" class="btn btn_head">Start Now</a>
+                    </div>
+                    <div class="col-2 text-center full">
+                        <div class="circle">4</div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+            
+        </section>
+
+        <!-- section python -->
+        <section class=" py-5" id="python">
+            <div class="container my-5 py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="text-light display-1 fw-bold">Python</h1>
+                        <p class="text-light fs-5">
+                            Python is a computer programming language often used to build websites and software,
+                            automate tasks, and analyze data.
+                        </p>
+                        <a href="./introudaction for python/introduction.html" target="_blank" class="btn btn-lg text-light mt-3">Read More</a>
+                    </div>
+                    <!-- content -->
+                    <div class="col-md-6 mt-4 py-5">
+                        <img src="./img/images.jpeg" alt="" class="text-center img-fluid">
+                    </div>
+                    <!-- img -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container p-5">
+            <div class="row text-center">
+                <h4 class="text-center text-light p-3">Follow us on social media pages</h4>
+                <div class="d-flex gap-2 justify-content-center">
+                    <a href="" class="" title="Facebook"><i class="fa-brands fa-facebook fa-2xl"></i></a> <!-- facebook -->
+                    <a href="" class="" title="Whatsapp"><i class="fa-brands fa-whatsapp fa-2xl"></i></a> <!-- Whatsapp -->
+                    <a href="" class="" title="Github"><i class="fa-brands fa-github fa-2xl"></i></a> <!-- github -->
+                    <a href="" class="" title="Linked in"><i class="fa-brands fa-linkedin fa-2xl"></i></a> <!-- linked in -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

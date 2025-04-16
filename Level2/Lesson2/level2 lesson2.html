@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta and Title -->
+  <meta charset="UTF-8">
+  <title>Level2 Lesson2</title>
+
+  <!-- Favicon & Stylesheets -->
+  <link rel="icon" href="./image/logo python.png">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color: #121212; color: white;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg animate-fadein">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="../../index.html" target="_blank">
+        <img src="./image/logo.png" alt="logo-python" class="img-fluid" >
+      </a>
+      
+      <!-- Toggler -->
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ol class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#about" target="_blank">About us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
+          <li class="nav-item"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasRightLabel">Lessons</h3>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="../../introudaction for python/introduction.html" target="_blank">Introudaction For Python</a>
+        <a href="../Lesson1/level2 lesson1.html" target="_blank" class="d-block mt-3">Lesseo1</a>
+        <a href="../Lesson3/level2 lesson3.html" target="_blank" class="d-block mt-3">Lesseo3</a>
+        <a href="../Lesson4/level2 lesson4.html" target="_blank" class="d-block mt-3">Lesseo4</a>
+        <a href="../Lesson5/Level2 lesson5.html" target="_blank" class="d-block mt-3">Lesseo5</a>
+    </div>
+</div>
+
+  <!-- Content -->
+  <div class="container mt-4 animate-fadein">
+    <h2>Level 2</h2>
+    <h2>Lesson 2</h2>
+    <h5><span class="highlight">String methods in python</span></h5>
+  </div>
+
+  <!-- Print Examples -->
+  <div class="container animate-fadein">
+    <div class="rounded p-3 mb-4">
+      <h3>Python has a set of built-in methods that you can use on strings.</h3>
+      <h5>1. Upper(): method returns a string where all characters are in upper case.</h5>
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>username="ahmed"</li>
+          <li>print(username.upper())</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>AHMED</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concatenate Messages -->
+    <div class="rounded p-3 mb-4">
+      <h5>2. Lower(): method Converts a string into lower case.</h5>
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed1()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>name = "ALI"</li>
+          <li>print(name.lower())</li>
+        </ul>
+
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>ali</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Multiline Messages -->
+    <div class="rounded p-3 mb-4">
+      <h5>3. Capitalize(): Converts the first character to upper case.</h5>
+      
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed2()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>name = "ALI"</li>
+          <li>print(name.capitalize())</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>Ali</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Messages 3 -->
+    <div class="rounded p-3 mb-4">
+      <h5>4. strip(): method removes any white space from the beginning or the end.</h5>
+      
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed3()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>name = "   ALI    "</li>
+          <li>print(name)</li>
+          <li>print(name.strip())</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li><pre>   ALI    </pre></li>
+            <li>ALI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages 4 -->
+    <div class="rounded p-3 mb-4">
+      <h5>5. Len(): It is a method used to measure the length of a text or To find out the number of letters in the text.</h5>
+      
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed4()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>name = "   ALI    "</li>
+          <li>print(len(name))</li>
+          <li>print(len(name.strip()))</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>8</li>
+            <li>3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages 5 -->
+    <div class="rounded p-3 mb-4">
+      <h5>6. Replace(): method replaces a string with another string.</h5>
+      
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed5()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>name = "Hana"</li>
+          <li>print(name)</li>
+          <li>print(name.replace('H','J'))</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>Hana</li>
+            <li>Jana</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages 6 -->
+    <div class="rounded p-3 mb-4">
+      <h5>7. Index(): Searches the string for a specific value and returns the position where it was found.</h5>
+      
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed6()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>message = "I Love Python"</li>
+          <li>print(message.index('Love'))</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- message 7-->
+    <div class="rounded p-3 mb-4">
+      <h5>8. Find(): Searches the string for a specific value and returns the position where it was found.</h5>
+      
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed7()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>message = "I Love Python"</li>
+          <li>print(message.find('Love'))</li>
+          <li>print(message.find('love'))</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>2</li>
+            <li>-1</li>
+          </ul>
+        </div>
+      </div>
+      <a href="../../Curriculum/Level 2.docx" class="btn btn-primary">Learn More</a>
+    </div>
+
+  </div>
+
+  <!-- videos -->
+  <h1 class="text-center">Videos</h1>
+  <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HmDLsnLgt0M?si=J6sh31zwmV7gCYAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/doDJDkUOEJQ?si=_waHcHcoZx02Rpff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kgb96E9ogUw?si=BvheUoEt2aCts44A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jbV9d9H-udY?si=P6J846qi9ew26Maf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/crw3rVFNwIM?si=WkS4Qxt91pbRjlRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Interactive Python -->
+  <section class="my-5 animate-fadein">
+    <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
+            width="100%" height="356" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Navigation -->
+  <section class="d-flex justify-content-center gap-3 my-5">
+    <a href="../Lesson1/level2 lesson1.html" target="_blank" class="btn btn-primary">previous</a>
+    <a href="../Lesson3/level2 lesson3.html" target="_blank" class="btn btn-primary">Next</a>
+  </section>
+
+  <!-- Scripts -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/script level1 lesson3.js"></script>
+
+</body>
+</html>

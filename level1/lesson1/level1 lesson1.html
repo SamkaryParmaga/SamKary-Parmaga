@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta and Title -->
+  <meta charset="UTF-8">
+  <title>Level1 Lesson1</title>
+
+  <!-- Favicon & Stylesheets -->
+  <link rel="icon" href="./image/logo python.png">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color: #121212; color: white;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg animate-fadein">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="../../index.html" target="_blank">
+        <img src="./image/logo.png" alt="logo-python" class="img-fluid" >
+      </a>
+      
+      <!-- Toggler -->
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ol class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#about" target="_blank">About us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
+          <li class="nav-item"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasRightLabel">Lessons</h3>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="../../introudaction for python/introduction.html" target="_blank">Introudaction For Python</a>
+        <a href="../lesson2/level1 lesson2.html" target="_blank" class="d-block mt-3">Lesseo2</a>
+        <a href="../lesson3/level1 lesson3.html" target="_blank" class="d-block mt-3">Lesseo3</a>
+        <a href="../lesson4/level1 lesson4.html" target="_blank" class="d-block mt-3">Lesseo4</a>
+        <a href="../lesson5/level1 lesson5.html" target="_blank" class="d-block mt-3">Lesseo5</a>
+    </div>
+</div>
+
+  <!-- Content -->
+  <div class="container mt-4 animate-fadein">
+    <h2>Level 1</h2>
+    <h2>Lesson 1</h2>
+    <h5><span class="highlight">print()</span> Function</h5>
+  </div>
+
+  <!-- Print Examples -->
+  <div class="container animate-fadein">
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">print(message)</span> — message can be:</h3>
+      <ol>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>List</li>
+        <li>... and more</li>
+      </ol>
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>print("hello") <span class="text-success"># string</span></li>
+          <li>print(25) <span class="text-success"># number</span></li>
+          <li>print(True) <span class="text-success"># boolean</span></li>
+          <li>print([1, 2, "hello"]) <span class="text-success"># list</span></li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>hello</li>
+            <li>25</li>
+            <li>True</li>
+            <li>[1, 2, "hello"]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concatenate Messages -->
+    <div class="rounded p-3 mb-4">
+      <h3>Adding multiple messages using <span class="highlight">+</span> or <span class="highlight">,</span> :</h3>
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed1()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>print("hello" + " python")</li>
+          <li>print("welcome", 25)</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>hello python</li>
+            <li>welcome 25</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Multiline Messages -->
+    <div class="rounded p-3 mb-4">
+      <h3>Creating multiple lines using <span class="highlight">\n</span>, <span class="highlight">"""</span> or <span class="highlight">'''</span> :</h3>
+      <h4>Examples:</h4>
+      <!-- Toggle Button -->
+      <button class="interactive-button" onclick="showed2()">Show/Hide Examples</button>
+      
+      <!-- Example Output -->
+      <div id="" class="d-flex flex-wrap hidden mt-3 ex">
+        <ul class="bg-black rounded-3 p-4 me-4">
+          <li>print("welcome \n python")</li>
+          <li>print("""\n welcome\n python\n """)</li>
+          <li>print('''\n welcome\n python\n ''')</li>
+        </ul>
+        <div>
+          <h4>Output:</h4>
+          <ul>
+            <li>welcome<br>python</li>
+            <li>welcome<br>python</li>
+            <li>welcome<br>python</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- videos -->
+  <h1 class="text-center">Videos</h1>
+  <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vl1mHJMrEnk?si=CmEqG5FUPyuocHmT&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u3q-e9vOl8w?si=57WoIxLEV43KmEbz&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VSeADGG7d6U?si=dUkAIBWgMTMFg0d9&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Interactive Python -->
+  <section class="my-5 animate-fadein">
+    <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
+            width="100%" height="356" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Navigation -->
+  <section class="d-flex justify-content-center gap-3 my-5">
+    <a href="../lesson2/level1 lesson2.html" target="_blank" class="btn btn-primary">Next</a>
+  </section>
+
+  <!-- Scripts -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/script level1 lesson1.js"></script>
+
+</body>
+</html>
