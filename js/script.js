@@ -19,6 +19,15 @@ if (image) {
     profile_image.src = image
 }
 
+function messagelevel0() {
+    if (localStorage.getItem('data')) {
+        window.open('./level1/lesson1/level1 lesson1.html')
+    } else {
+        alert('You must be logged in.')
+        window.open('./log in/login.html')
+    }
+}
+
 function messagelevel1() {
     if (localStorage.getItem('level1') !== 'Finish the leve1') {
         alert('You must complete level 1.')
