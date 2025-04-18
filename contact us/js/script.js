@@ -5,7 +5,7 @@ function submit(){
         alert('please enter data')
     }else{
         let text = `Name: ${inputs[0].value}%A \n Email: ${inputs[1].value}%A \n Phone: ${inputs[2].value}%A \n Message: ${message.value}`;
-        let url = `https://wa.me/01033248788?text=${text}`
+        let url = `https://wa.me/+201033248788?text=${text}`
         window.open(url,'_blank')
     }
 }
