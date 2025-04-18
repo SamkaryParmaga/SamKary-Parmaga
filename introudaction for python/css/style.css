@@ -4,7 +4,6 @@ body {
     color: #ddd;
     padding-bottom: 40px;
     animation: fadeIn 1.2s ease-in-out;
-    overflow: hidden;
   }
   video {
     width: 100%;
