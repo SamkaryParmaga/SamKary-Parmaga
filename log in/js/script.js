@@ -6,7 +6,7 @@ let image = document.getElementById('profile')
 window.onload = ()=>{
     localStorage.getItem('data')
     if (localStorage.getItem('data')=='true') {
-        window.location.href='./level1/lesson1/level1 lesson1.html'
+        window.location.href='../level1/lesson1/level1 lesson1.html'
     }
 }
 
