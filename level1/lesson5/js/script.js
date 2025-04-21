@@ -49,7 +49,7 @@ function check() {
         input.includes('print')
     ) {
         alert('Good');
-        window.location.href = '../../Feedback/index.html';
+        window.open('../../Feedback/Feedback.html','_blank');
         sessionStorage.setItem('formlevel1',true)
     } else {
         alert('Fail');
