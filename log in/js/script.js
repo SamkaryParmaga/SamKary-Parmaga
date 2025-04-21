@@ -6,7 +6,7 @@ let image = document.getElementById('profile')
 window.onload = ()=>{
     localStorage.getItem('data')
     if (localStorage.getItem('data')=='true') {
-        window.location.href='../../level1/lesson1/level1 lesson1.html'
+        window.location.href='../level1/lesson1/level1 lesson1.html'
     }
 }
 
@@ -54,7 +54,7 @@ form.addEventListener('submit',(event)=>{
         alert('Registration has been completed successfully.')
         localStorage.setItem('data',true);
         localStorage.setItem('image',image.src)
-        window.open('../../level1/lesson1/level1 lesson1.html')
+        window.open('../level1/lesson1/level1 lesson1.html')
     })
     
 });
