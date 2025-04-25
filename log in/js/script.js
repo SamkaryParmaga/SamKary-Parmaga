@@ -4,19 +4,19 @@ let text = document.querySelectorAll('.message-error')
 let image = document.getElementById('profile')
 
 window.onload = ()=>{
-    localStorage.getItem('data')
-    if (localStorage.getItem('data')=='true') {
-        window.location.href='../level1/lesson1/level1 lesson1.html'
-    }
+    // localStorage.getItem('data')
+    // if (localStorage.getItem('data')=='true') {
+    //     window.location.href='../level1/lesson1/level1 lesson1.html'
+    // }
 }
 
 // chaneg image to male:
 function male() {
-    image.src='./img/male-removebg-preview.png'
+    image.src='/img/male-removebg-preview.webp'
 }
 // chaneg image to female:
 function female() {
-    image.src='./img/female-removebg-preview.png'
+    image.src='/img/female-removebg-preview.webp'
 }
 
 form.addEventListener('submit',(event)=>{

@@ -49,10 +49,12 @@ form.addEventListener('submit' , ()=>{
     }
     ).then((response)=>response.json)
     .then((data)=>{
-        alert('Thank you for your reply.')
-        if (sessionStorage.getItem(formlevel1) === 'true') {
-            sessionStorage.removeItem('formlevel1')
+        
+        if (sessionStorage.getItem("formlevel1") === 'true') {
             window.open('../quiz/quiz level1.html')
+            sessionStorage.removeItem('formlevel1')
+        } else {
+            alert('Thank you for your reply.')
         }
     })
 })

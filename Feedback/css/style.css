@@ -1,34 +1,18 @@
 body{
-    background: linear-gradient(to top,rgba(60, 60, 60, 0.389),#b9b9b949),url(../img/background\ feedback.jpg);
+    background: linear-gradient(to top,rgba(60, 60, 60, 0.389),#b9b9b949),url(../img/background\ feedback.webp);
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
     background-size: cover;
 }
 
-
-
 #feed_head{
     text-shadow: 12px 20px 24px  black;
 }
 
-
 .container{
     border-radius: 20px;
 }
-/* background style */
-/* .btn{
-    color: white;
-    background-color: #8990f0;
-    cursor: pointer;
-    border-radius: 8px 0;
-    transition: 0.5s;
-} */
-/* .btn:hover{
-    background-color: #9ea4f4;
-    scale: 1.1;
-    color: #ffffff;
-} */
 
 /* input design */
 input::placeholder{
@@ -81,7 +65,6 @@ textarea::placeholder{
 #btn:hover::before {
     left: 0;
 }
-
 
 /* valid style */
 p{
