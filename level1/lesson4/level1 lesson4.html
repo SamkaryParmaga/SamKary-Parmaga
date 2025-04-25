@@ -3,6 +3,7 @@
 <head>
   <!-- Meta and Title -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Level1 Lesson4</title>
 
   <!-- Favicon & Stylesheets -->
@@ -18,11 +19,11 @@
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="../../index.html" target="_blank">
-        <img src="./images/logo.png" alt="logo-python" class="img-fluid" >
+        <img src="./images/logo.png" alt="logo-python" class="img-fluid" loading="lazy">
       </a>
       
       <!-- Toggler -->
-      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler bg-white" aria-label="open navigation" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -34,7 +35,7 @@
           <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
           <li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
-          <li class="nav-item"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+          <li class="nav-item"><button class="btn btn-primary" aria-label="show more lessons" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
         </ol>
       </div>
     </div>
@@ -144,7 +145,9 @@
       </div>
 
       <!-- link -->
-      <a href="../../Curriculum/Level 1.docx" class="btn-primary btn">Learn More</a>
+      <a href="../../Curriculum/Level 1.docx" class="btn btn-primary">
+        learn more
+      </a>      
       
     </div>
   </div>
@@ -160,13 +163,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mvyEHxIX_lE?si=fWY9o_o0VejPXHfv&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mvyEHxIX_lE?si=fWY9o_o0VejPXHfv&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>      </div>
       <div class="carousel-item text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/f-Y62PnQEy4?si=K-uZmJxtHCKW2XNJ&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f-Y62PnQEy4?si=K-uZmJxtHCKW2XNJ&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>      </div>
       <div class="carousel-item text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/prv7cVm2dxE?si=ZM4IIwayJUzpTjTg&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/prv7cVm2dxE?si=ZM4IIwayJUzpTjTg&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>      </div>
       <div class="carousel-item text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GEMZpw7ug-k?si=XwjwGYZo5WUPPtiL&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GEMZpw7ug-k?si=XwjwGYZo5WUPPtiL&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -182,7 +185,7 @@
   <!-- Interactive Python -->
   <section class="my-5 animate-fadein">
     <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
-            width="100%" height="356" frameborder="0" allowfullscreen></iframe>
+            width="100%" height="356" frameborder="0" allowfullscreen loading="lazy" title="compiler"></iframe>
   </section>
 
   <!-- Navigation -->

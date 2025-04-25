@@ -3,6 +3,7 @@
 <head>
   <!-- Meta and Title -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Level1 Lesson5</title>
 
   <!-- Favicon & Stylesheets -->
@@ -18,11 +19,11 @@
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="../../index.html" target="_blank">
-        <img src="./images/logo.png" alt="logo-python" class="img-fluid" >
+        <img src="./images/logo.png" alt="logo-python" class="img-fluid" loading="lazy">
       </a>
       
       <!-- Toggler -->
-      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler bg-white" type="button" aria-label="open navigation" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -34,7 +35,7 @@
           <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
           <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#contact" target="_blank">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
-          <li class="nav-item"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+          <li class="nav-item"><button class="btn btn-primary" aria-label="show more lessons" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
         </ol>
       </div>
     </div>
@@ -86,7 +87,7 @@
   <!-- Interactive Python -->
   <section class="my-5 animate-fadein">
     <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
-            width="100%" height="356" frameborder="0" allowfullscreen></iframe>
+            width="100%" height="356" frameborder="0" allowfullscreen loading="lazy" title="compiler"></iframe>
   </section>
 
   <!-- Navigation -->
