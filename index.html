@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/logo-website.png">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style page.css">
 </head>
 
 <body>
@@ -16,9 +16,9 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a href="./index.html" class="navbar-brand">
-                <img src="./img/logo.png" class="img-fluid" id="logo" alt="logo-website">
+                <img src="./img/logo.png" class="img-fluid" id="logo" alt="logo-website" loading="lazy">
             </a>
-            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">
+            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" aria-label="open navigation" data-bs-target="#nav">
                 <span class="navbar-toggler-icon "></span>
             </button>
             <div class="navbar-collapse collapse text-center" id="nav">
@@ -30,7 +30,7 @@
                     <li class="nav-item"><a href="./contact us/contact us.html" class="nav-link fs-5 link2" target="_blank">Contact Us</a></li>
                     <li class="nav-item"><a href="./Feedback/Feedback.html" class="nav-link fs-5 link2" target="_blank">Feedback</a></li>
                     <li class="nav-item position-relative">
-                        <img src="./log in/img/male-removebg-preview.png" alt="profile" id="profile_image" class="img-fluid profile-img" onclick="showprofile()">
+                        <img src="./log in/img/male-removebg-preview.png" alt="profile" id="profile_image" class="img-fluid profile-img" loading="lazy" onclick="showprofile()">
                         <div class="profile-box bg-light p-3 text-center rounded shadow">
                             <h5 id="profile_name"></h5>
                             <h6 id="profile_email"></h6>
@@ -51,7 +51,7 @@
             </h1>
             <p class="">you can learn python easy here where you <br> will know all you want to know and it makes you a
                 profesional </p>
-            <a target="_blank" href="./log in/login.html" class="btn btn-lg btn_head">Get Started</a>
+            <button target="_blank" onclick="check()" class="btn btn-lg btn_head">Get Started</button>
         </div>
     </header>
 
@@ -63,7 +63,7 @@
                 <h1 class="text-center my-5 fw-bolder">About Us</h1>
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="./img/image.jpg" class="img-fluid rounded" alt="ABout Us">
+                        <img src="./img/image.jpg" class="img-fluid rounded" alt="ABout Us" loading="lazy">
                     </div>
                     <div class="col-lg-6 align-content-center">
                         <h2 class="fs-1 fw-bolder">Who We?</h2>
@@ -186,11 +186,11 @@
                             Python is a computer programming language often used to build websites and software,
                             automate tasks, and analyze data.
                         </p>
-                        <a href="./introudaction for python/introduction.html" target="_blank" class="btn btn-lg text-light mt-3">Read More</a>
+                        <a href="./introudaction for python/introduction.html" target="_blank" class="btn btn-lg mt-3 btn_head">learn more</a>
                     </div>
                     <!-- content -->
                     <div class="col-md-6 mt-4 py-5">
-                        <img src="./img/images.jpeg" alt="" class="text-center img-fluid">
+                        <img src="./img/images.jpeg" alt="" class="text-center img-fluid" loading="lazy">
                     </div>
                     <!-- img -->
                 </div>

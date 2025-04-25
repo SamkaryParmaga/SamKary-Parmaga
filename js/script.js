@@ -19,6 +19,21 @@ if (image) {
     profile_image.src = image
 }
 
+function check() {
+    if (localStorage.getItem('data')) {
+        if (localStorage.getItem('level3') == 'Finish the leve3') {
+            // window.open('')
+        } else if (localStorage.getItem('level2') == 'Finish the leve2') {
+            // window.open('')
+        } else {
+            window.open('./level1/lesson1/level1 lesson1.html')
+        }
+    } else {
+        alert('You must be logged in.')
+        window.open('./log in/login.html')
+    }
+}
+
 function messagelevel0() {
     if (localStorage.getItem('data')) {
         window.open('./level1/lesson1/level1 lesson1.html')
@@ -41,9 +56,9 @@ function messagelevel2() {
     if (localStorage.getItem('level2') !== 'Finish the leve2') {
         alert('You must complete level 2.')
     }
-    // else {
-    //     window.open('./Level2/Lesson1/level2 lesson1.html')
-    // }
+    else {
+        window.open('./Level2/Lesson1/level2 lesson1.html')
+    }
 }
 
 function messagelevel3() {
