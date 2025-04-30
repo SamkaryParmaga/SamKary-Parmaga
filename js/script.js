@@ -44,7 +44,7 @@ function messagelevel0() {
 }
 
 function messagelevel1() {
-    if (localStorage.getItem('level1') !== 'Finish the leve1') {
+    if (localStorage.getItem('level1') !== 'Finish the level1') {
         alert('You must complete level 1.')
     }
     else {
@@ -53,7 +53,7 @@ function messagelevel1() {
 }
 
 function messagelevel2() {
-    if (localStorage.getItem('level2') !== 'Finish the leve2') {
+    if (localStorage.getItem('level2') !== 'Finish the level2') {
         alert('You must complete level 2.')
     }
     else {
@@ -62,7 +62,7 @@ function messagelevel2() {
 }
 
 function messagelevel3() {
-    if (localStorage.getItem('level3') !== 'Finish the leve3') {
+    if (localStorage.getItem('level3') !== 'Finish the level3') {
         alert('You must complete level 3.')
     }
     // else {

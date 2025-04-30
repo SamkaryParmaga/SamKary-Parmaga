@@ -6,9 +6,9 @@ const questions = [
     { q: "To know the type of a variable's value, we use:", choices: ['a)Type()', 'b)Typeof()', 'c)Kind()', 'd)Print(like())'], answer: 'a)Type()'},
     { q: "Can the print command print a list?", choices: ['a)True', 'b)False', 'c)Error in the question'], answer: 'a)True'},
     { q: "Guess the output: print(type(10 / 2))", choices: ["a)class 'float'", "b)class 'int'", "c)class 'str'", "d)class 'bool'"], answer:"a)class 'float'"},
-    { q: "Guess the output: <br> <img src='./img/Picture1.png'>", choices: ['a)10', 'b)7', 'c)25', 'd)30'], answer: 'c)25'},
-    { q: "Guess the output: <br> <img src='./img/Picture2.png'>", choices: ['a)“Python”', 'b)Python', 'c)1var', 'd)Error'], answer: 'd)Error'},
-    { q: "Guess the output: <br> <img src='./img/Picture3.png'>", choices: ['a)54', 'b)9', 'c)4444', 'd)Error'] , answer: 'a)54'}
+    { q: "Guess the output: <br> <img src='./img/Picture1.png' alt='question1'>", choices: ['a)10', 'b)7', 'c)25', 'd)30'], answer: 'c)25'},
+    { q: "Guess the output: <br> <img src='./img/Picture2.png' alt='question2'>", choices: ['a)“Python”', 'b)Python', 'c)1var', 'd)Error'], answer: 'd)Error'},
+    { q: "Guess the output: <br> <img src='./img/Picture3.png' alt='question2'>", choices: ['a)54', 'b)9', 'c)4444', 'd)Error'] , answer: 'a)54'}
 ];
 
 const questionsContainer = document.getElementById("questions");

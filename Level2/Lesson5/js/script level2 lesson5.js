@@ -64,3 +64,8 @@ function showed(){
     ex[1].classList.toggle('show')
     ex[2].classList.toggle('show')
 }
+
+function clearall() {
+    let enter = document.getElementById('code');
+    enter.value=''
+}
