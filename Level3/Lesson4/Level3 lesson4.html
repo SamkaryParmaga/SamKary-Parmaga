@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 3 Lesson 4 - Nested Loops & Loop Statements</title>
+  <link rel="icon" href="./image/logo python.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body style="background-color: #121212; color: white;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg animate-fadein">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="../../index.html" target="_blank">
+        <img src="./image/logo.png" alt="logo-python" class="img-fluid" loading="lazy">
+      </a>
+      
+      <!-- Toggler -->
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ol class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#about" target="_blank">About us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
+          <li class="nav-item"><button aria-label="show more lessons" class="btn btn-primary"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <!-- sidebar lessons -->
+  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasRightLabel">Lessons</h3>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-block">
+        <a href="../../introudaction for python/introduction.html" class="d-block mt-2" target="_blank">Introudaction For Python</a>
+        <a href="../Lesson1/Level3 lesson1.html" class="d-block mt-2" target="_blank">Lesson1</a>
+        <a href="../Lesson2/Level3 lesson2.html" class="d-block mt-2" target="_blank">Lesson2</a>
+        <a href="../Lesson3/Level3 lesson3.html" class="d-block mt-2" target="_blank">Lesson3</a>
+        <a href="../Lesson5/Level3 lesson5.html" class="d-block mt-2" target="_blank">Lesson5</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container mt-4 animate-fadein">
+    <h2>Level 3</h2>
+    <h2>Lesson 4: Nested For Loops & Statements in Loops</h2>
+  </div>
+
+  <!-- Nested Loops Section -->
+  <div class="container animate-fadein">
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">1. Nested Loops</span></h3>
+      <p>A nested loop is a loop <strong>inside</strong> another loop. Used when you need to iterate over multiple sequences.</p>
+      
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>Concept</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Nested Loop</td>
+              <td>Loop inside another loop</td>
+              <td><code>for x in seq1:<br>&nbsp;&nbsp;for y in seq2:</code></td>
+            </tr>
+            <tr>
+              <td>Practical Use</td>
+              <td>Combine all items from two lists</td>
+              <td><code>for car in cars:<br>&nbsp;&nbsp;for color in colors:</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="interactive-button mt-3">Show Example</button>
+      <div class="hidden mt-3">
+        <pre><code class="language-python"># Nested loop example
+cars = ["BMW", "Toyota", "Honda"]
+colors = ["red", "blue", "green"]
+
+for car in cars:
+    for color in colors:
+        print(f"{car} is {color}")</code></pre>
+        <p class="mt-2"><strong>Output:</strong></p>
+        <pre class="bg-dark p-2">BMW is red
+BMW is blue
+BMW is green
+Toyota is red
+Toyota is blue
+Toyota is green
+Honda is red
+Honda is blue
+Honda is green</pre>
+      </div>
+    </div>
+
+    <!-- Loop Statements Section -->
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">2. Loop Control Statements</span></h3>
+      <p>Special statements that change how loops execute:</p>
+      
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>Statement</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>break</code></td>
+              <td>Stops the loop completely</td>
+              <td><code>if x == 5: break</code></td>
+            </tr>
+            <tr>
+              <td><code>continue</code></td>
+              <td>Skips current iteration</td>
+              <td><code>if x == 5: continue</code></td>
+            </tr>
+            <tr>
+              <td><code>pass</code></td>
+              <td>Placeholder for empty loops</td>
+              <td><code>for x in seq: pass</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h4>break Statement</h4>
+          <button class="interactive-button">Show Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        break
+    print(fruit)</code></pre>
+            <p><strong>Output:</strong> <code>apple</code></p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <h4>continue Statement</h4>
+          <button class="interactive-button">Show Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        continue
+    print(fruit)</code></pre>
+            <p><strong>Output:</strong> <code>apple cherry</code></p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <h4>pass Statement</h4>
+          <button class="interactive-button">Show Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">for x in [1, 2, 3]:
+    pass  # Does nothing</code></pre>
+            <p><strong>Output:</strong> (No output)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Videos -->
+  <h1 class="text-center">Videos</h1>
+  <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8qIExPSQkRw" title="Nested Loops" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6iF8Xb7Z3wQ" title="Loop Control Statements" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W8KRzm-HUcc" title="Practical Examples" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Interactive Python -->
+  <section class="my-5 animate-fadein">
+    <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
+            width="100%" height="356" frameborder="0" allowfullscreen loading="lazy" title="compiler"></iframe>
+  </section>
+
+  <!-- Navigation -->
+  <section class="d-flex justify-content-center gap-3 my-5">
+    <a href="../Lesson3/Level3 lesson3.html" class="btn btn-primary" target="_blank">Previous</a>
+    <a href="../Lesson5/Level3 lesson5.html" class="btn btn-primary" target="_blank">Next</a>
+  </section>
+
+ 
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/script level1 lesson2.js"></script>
+</body>
+</html>

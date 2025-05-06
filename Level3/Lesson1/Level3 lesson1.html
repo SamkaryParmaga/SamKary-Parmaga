@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Level3 lesson1 </title>
+<link href="./image/logo python.png" rel="icon"/>
+<link href="./css/bootstrap.min.css" rel="stylesheet"/>
+<link href="./css/all.min.css" rel="stylesheet"/>
+<link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body style="background-color: #121212; color: white;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg animate-fadein">
+<div class="container">
+<!-- Logo -->
+<a class="navbar-brand" href="../../index.html" target="_blank">
+<img alt="logo-python" class="img-fluid" loading="lazy" src="./image/logo.png"/>
+</a>
+<!-- Toggler -->
+<button aria-label="open navigation" class="navbar-toggler bg-white" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Links -->
+<div class="collapse navbar-collapse" id="navbarNav">
+<ol class="navbar-nav ms-auto text-center">
+<li class="nav-item"><a class="nav-link fs-5" href="../../index.html" target="_blank">Home</a></li>
+<li class="nav-item"><a class="nav-link fs-5" href="../../index.html#about" target="_blank">About us</a></li>
+<li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
+<li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
+<li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
+<li class="nav-item"><button aria-controls="offcanvasRight" aria-label="show more lessons" class="btn btn-primary" data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas"><i class="fa-solid fa-book"></i></button></li>
+</ol>
+</div>
+</div>
+</nav>
+<!-- sidebar lessons -->
+<div aria-labelledby="offcanvasRightLabel" class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1">
+<div class="offcanvas-header">
+<h3 class="offcanvas-title" id="offcanvasRightLabel">Lessons</h3>
+<button aria-label="Close" class="btn-close bg-light" data-bs-dismiss="offcanvas" type="button"></button>
+</div>
+<div class="offcanvas-body d-block">
+<a class="d-block mt-2" href="../../introudaction for python/introduction.html" target="_blank">Introudaction For Python</a>
+<a class="d-block mt-2" href="../Lesson2/Level3 lesson2.html" target="_blank">Lesson2</a>
+<a class="d-block mt-2" href="../Lesson3/Level3 lesson3.html" target="_blank">Lesson3</a>
+<a class="d-block mt-2" href="../Lesson4/Level3 lesson4.html" target="_blank">Lesson4</a>
+<a class="d-block mt-2" href="../Lesson5/Level3 lesson5.html" target="_blank">Lesson5</a>
+</div>
+</div>
+<!-- Content -->
+<div class="container mt-4 animate-fadein">
+<h2>Level 3</h2>
+<h2>Lesson 1</h2>
+<h5>List</h5>
+</div>
+<!-- Print Examples -->
+<div class="container animate-fadein">
+<div class="rounded p-3 mb-4">
+<h3><span class="highlight">Lists: </span>used to store multiple items in a single variable using square brackets [].</h3>
+<h4>Benefits of Lists:</h4>
+<ul>
+<li>Organize data</li>
+<li>Store large amounts of data</li>
+<li>Quick access to any item</li>
+<li>Can store different data types (preferably same type)</li>
+<li>Can loop through list items</li>
+<li>Easy to add and remove items</li>
+</ul>
+<h4>How to create a list:</h4>
+<p>To create a list, use square brackets and assign it to a variable:</p>
+<pre class="bg-black text-white p-3 rounded">friends = ['yousef','abdo','anna','hesham','lujina']
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'abdo', 'anna', 'hesham', 'lujina']</pre>
+<h4>List Methods with Examples:</h4>
+<h5>append(): Adds an element at the end of the list</h5>
+<pre class="bg-black text-white p-3 rounded">friends.append('ahmed')
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'abdo', 'anna', 'hesham', 'lujina', 'ahmed']</pre>
+<h5>insert(): Adds an element at the specified position</h5>
+<pre class="bg-black text-white p-3 rounded">friends.insert(1, 'sara')
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'sara', 'abdo', 'anna', 'hesham', 'lujina', 'ahmed']</pre>
+<h5>pop(): Removes the element at the specified position</h5>
+<pre class="bg-black text-white p-3 rounded">friends.pop()
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'sara', 'abdo', 'anna', 'hesham', 'lujina']</pre>
+<h5>remove(): Removes the item with the specified value</h5>
+<pre class="bg-black text-white p-3 rounded">friends.remove('abdo')
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'sara', 'anna', 'hesham', 'lujina']</pre>
+<h5>clear(): Removes all elements from the list</h5>
+<pre class="bg-black text-white p-3 rounded">friends.clear()
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">[]</pre>
+<h5>sort(): Sorts the list in ascending order</h5>
+<pre class="bg-black text-white p-3 rounded">friends = ['yousef','abdo','anna','hesham','lujina']
+friends.sort()
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['abdo', 'anna', 'hesham', 'lujina', 'yousef']</pre>
+<h5>reverse(): Reverses the order of the list</h5>
+<pre class="bg-black text-white p-3 rounded">friends.reverse()
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'lujina', 'hesham', 'anna', 'abdo']</pre>
+<h5>index(): Returns the index of the specified element</h5>
+<pre class="bg-black text-white p-3 rounded">i = friends.index('anna')
+print(i)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">3</pre>
+<h5>extend(): Adds elements of another list</h5>
+<pre class="bg-black text-white p-3 rounded">friends.extend(['omar', 'jana'])
+print(friends)</pre>
+<p><strong>Output:</strong></p>
+<pre class="bg-dark text-white p-2 rounded">['yousef', 'lujina', 'hesham', 'anna', 'abdo', 'omar', 'jana']</pre>
+<p class="mt-4"><strong>Finish the lesson!!!</strong></p>
+</div>
+</div>
+<!-- videos -->
+<h1 class="text-center">Videos</h1>
+<div class="carousel slide p-3" data-bs-ride="carousel" id="carouselExampleIndicators">
+<div class="carousel-indicators">
+<button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
+<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active text-center">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/2EY1CCnByK4?si=mqsNMex-Jg5PioHa&amp;start=1" title="YouTube video player" width="560"></iframe>
+</div>
+<div class="carousel-item text-center">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/R_NU4vsJU6s?si=SEgGagwcxUXN-oP0&amp;start=3" title="YouTube video player" width="560"></iframe>
+</div>
+<div class="carousel-item text-center">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/nMCOB8KElwo?si=SMVHqPUAD2cIu29g&amp;start=2" title="YouTube video player" width="560"></iframe> </div>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
+<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
+<span aria-hidden="true" class="carousel-control-next-icon"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<!-- Interactive Python -->
+<section class="my-5 animate-fadein">
+<iframe allowfullscreen="" frameborder="0" height="356" loading="lazy" src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&amp;start=result&amp;showInstructions=true" title="compiler" width="100%"></iframe>
+</section>
+<!-- Navigation -->
+<section class="d-flex justify-content-center gap-3 my-5">
+<a class="btn btn-primary" href="../Lesson2/Level3 lesson2.html" target="_blank">Next</a>
+</section>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/all.min.js"></script>
+<script src="./js/script level1 lesson2.js"></script>
+</body>
+</html>
