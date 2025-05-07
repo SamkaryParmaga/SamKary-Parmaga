@@ -51,6 +51,7 @@ function check() {
         (input.match(/\b0\b/g) || []).length == 2
     ) {
         alert('Good');
+        window.open('../../quiz/quiz level2.html','_blank')
     } else {
         alert('Fail');
     }

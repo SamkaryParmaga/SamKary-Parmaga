@@ -57,7 +57,7 @@ function messagelevel2() {
         alert('You must complete level 2.')
     }
     else {
-        window.open('./Level2/Lesson1/level2 lesson1.html')
+        window.open('./Level3/Lesson1/Level3 lesson1.html')
     }
 }
 

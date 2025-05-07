@@ -51,3 +51,9 @@ input[type="radio"] {
     margin-bottom: 10px;
 }
 
+@media (max-width: 775px) {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
