@@ -65,9 +65,9 @@ function messagelevel3() {
     if (localStorage.getItem('level3') !== 'Finish the level3') {
         alert('You must complete level 3.')
     }
-    // else {
-    //     window.open('./Level2/Lesson1/level2 lesson1.html')
-    // }
+    else {
+        window.open('./Level4/lesson1/Level4 lesson1.html')
+    }
 }
 
 

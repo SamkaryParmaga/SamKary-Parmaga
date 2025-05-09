@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="samkary-parmaga Level4 lesson2">
+  <title>Level 4 Lesson 2 - Sets</title>
+  <link rel="icon" href="./image/logo python.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .table-custom {
+      background-color: white;
+      color: #212529;
+    }
+    .table-custom thead th {
+      background-color: #f8f9fa;
+    }
+    .table-custom tbody tr:hover {
+      background-color: rgba(0,0,0,.05);
+    }
+  </style>
+</head>
+<body style="background-color: #121212; color: white;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg animate-fadein">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html" target="_blank">
+        <img src="./image/logo.png" alt="logo-python" class="img-fluid" loading="lazy">
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ol class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#about" target="_blank">About us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
+          <li class="nav-item"><button aria-label="show more lessons" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <!-- sidebar lessons -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasRightLabel">Lessons</h3>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-block">
+        <a href="../../introudaction for python/introduction.html" class="d-block mt-2" target="_blank">Introudaction For Python</a>
+        <a href="../lesson1/level4 lesson1.html" class="d-block mt-2" target="_blank">Lesson1 </a>
+        <a href="../lesson3/level4 lesson3.html" class="d-block mt-2" target="_blank">Lesson3 </a>
+        <a href="../lesson4/level4 lesson4.html" class="d-block mt-2" target="_blank">Lesson4 </a>
+        <a href="../lesson5/level4 lesson5.html" class="d-block mt-2" target="_blank">Lesson5 </a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container mt-4 animate-fadein">
+    <h2>Level 4</h2>
+    <h2>Lesson 2: Sets</h2>
+  </div>
+
+  <!-- Sets Section -->
+  <div class="container animate-fadein">
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">1. Introduction to Sets</span></h3>
+      <p>A set is a collection that is <strong>unordered</strong>, <strong>unindexed</strong>, and <strong>does not allow duplicates</strong>.</p>
+      
+      <div class="table-responsive">
+        <table class="table table-custom table-striped">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Set</th>
+              <th>List</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Syntax</td>
+              <td><code>{}</code></td>
+              <td><code>[]</code></td>
+            </tr>
+            <tr>
+              <td>Ordered</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Duplicates</td>
+              <td>Not allowed</td>
+              <td>Allowed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="interactive-button mt-3">Show Example</button>
+      <div class="hidden mt-3">
+        <pre><code class="language-python"># Set creation
+daily_tasks = {"wake up", "brush teeth", "go to school"}
+print(daily_tasks)</code></pre>
+        <p class="mt-2"><strong>Output:</strong></p>
+        <pre class="bg-dark p-2">{'wake up', 'brush teeth', 'go to school'}</pre>
+      </div>
+    </div>
+
+    <!-- Accessing Set Items Section -->
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">2. Accessing Set Items</span></h3>
+      <p>Since sets are unordered, you can't access items by index. Use these methods:</p>
+      
+      <div class="table-responsive">
+        <table class="table table-custom table-striped">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>for loop</td>
+              <td>Iterate through all items</td>
+              <td><code>for x in my_set:</code></td>
+            </tr>
+            <tr>
+              <td>in operator</td>
+              <td>Check if item exists</td>
+              <td><code>if "item" in my_set:</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <button class="interactive-button">For Loop Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">fruits = {"apple", "banana", "cherry"}
+for fruit in fruits:
+    print(fruit)</code></pre>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button class="interactive-button">In Operator Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">fruits = {"apple", "banana", "cherry"}
+print("banana" in fruits)</code></pre>
+            <p><strong>Output:</strong> <code>True</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Set Methods Section -->
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">3. Set Methods</span></h3>
+      
+      <div class="table-responsive">
+        <table class="table table-custom table-striped">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>add()</code></td>
+              <td>Adds an element</td>
+              <td><code>my_set.add("item")</code></td>
+            </tr>
+            <tr>
+              <td><code>remove()</code></td>
+              <td>Removes an element</td>
+              <td><code>my_set.remove("item")</code></td>
+            </tr>
+            <tr>
+              <td><code>clear()</code></td>
+              <td>Removes all elements</td>
+              <td><code>my_set.clear()</code></td>
+            </tr>
+            <tr>
+              <td><code>del</code></td>
+              <td>Deletes the set completely</td>
+              <td><code>del my_set</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <button class="interactive-button">Add/Remove Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">colors = {"red", "blue"}
+colors.add("green")
+colors.remove("red")
+print(colors)</code></pre>
+            <p><strong>Output:</strong> <code>{'blue', 'green'}</code></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button class="interactive-button">Clear/Del Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">numbers = {1, 2, 3}
+numbers.clear()  # Empty set
+del numbers      # Deletes the set</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="../../Curriculum/level 4.docx" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+
+  <!-- Videos -->
+  <h1 class="text-center">Videos</h1>
+  <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PSc6QX4Py7k?si=KkVTw0YwsPwSeWTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N06_D5wWobg?si=K4GiXgV019Bn2RSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/o8pr--y5vuU?si=1fzq5NmGuwPUoUPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qv41OR37Syo" title="Python sets 🍴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Interactive Python -->
+  <section class="my-5 animate-fadein">
+    <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
+            width="100%" height="356" frameborder="0" allowfullscreen loading="lazy" title="compiler"></iframe>
+  </section>
+
+  <!-- Navigation -->
+  <section class="d-flex justify-content-center gap-3 my-5">
+    <a href="../lesson1/level4 lesson1.html" class="btn btn-primary" target="_blank">Previous</a>
+    <a href="../lesson3/level4 lesson3.html" class="btn btn-primary" target="_blank">Next</a>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/script level1 lesson2.js"></script>
+</body>
+</html>

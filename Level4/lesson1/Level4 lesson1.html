@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="samkary-parmaga Level4 lesson1">
+  <title>Level 4 Lesson 1 - Tuples</title>
+  <link rel="icon" href="./image/logo python.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color: #121212; color: white;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg animate-fadein">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="../../index.html" target="_blank">
+        <img src="./image/logo.png" alt="logo-python" class="img-fluid" loading="lazy">
+      </a>
+      
+      <!-- Toggler -->
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ol class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#about" target="_blank">About us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../index.html#levels" target="_blank">Levels</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../contact us/contact us.html" target="_blank">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="../../Feedback/Feedback.html" target="_blank">Feedback</a></li>
+          <li class="nav-item"><button aria-label="show more lessons" class="btn btn-primary"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-book"></i></button></li>
+        </ol>
+      </div>
+    </div>
+  </nav>
+
+  <!-- sidebar lessons -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasRightLabel">Lessons</h3>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-block">
+        <a href="../../introudaction for python/introduction.html" class="d-block mt-2" target="_blank">Introudaction For Python</a>
+        <a href="../lesson2/level4 lesson2.html" class="d-block mt-2" target="_blank">Lesson2 </a>
+        <a href="../lesson3/level4 lesson3.html" class="d-block mt-2" target="_blank">Lesson3 </a>
+        <a href="../lesson4/level4 lesson4.html" class="d-block mt-2" target="_blank">Lesson4 </a>
+        <a href="../lesson5/level4 lesson5.html" class="d-block mt-2" target="_blank">Lesson5 </a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container mt-4 animate-fadein">
+    <h2>Level 4</h2>
+    <h2>Lesson 1: Tuples</h2>
+  </div>
+
+  <!-- Tuples Section -->
+  <div class="container animate-fadein">
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">1. Introduction to Tuples</span></h3>
+      <p>In the previous level, you learned about lists. Now you'll learn about tuples - an ordered and unchangeable collection.</p>
+      <p><strong>Key Difference:</strong> Tuples are immutable (cannot be changed after creation).</p>
+      
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Tuple</th>
+              <th>List</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Syntax</td>
+              <td><code>()</code></td>
+              <td><code>[]</code></td>
+            </tr>
+            <tr>
+              <td>Mutable</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Use Case</td>
+              <td>Data that shouldn't change (like national ID)</td>
+              <td>Data that may need modification</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="interactive-button mt-3">Show Example</button>
+      <div class="hidden mt-3">
+        <pre><code class="language-python"># Tuple creation
+my_info = ("Mahmoud", "2005-01-01", "123456")
+print(my_info[0])  # Access first element</code></pre>
+        <p class="mt-2"><strong>Output:</strong></p>
+        <pre class="bg-dark p-2">Mahmoud</pre>
+      </div>
+    </div>
+
+    <!-- Modifying Tuples Section -->
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">2. Modifying Tuples (Indirectly)</span></h3>
+      <p>While tuples are immutable, you can modify them indirectly by converting to a list and back:</p>
+      
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>Step-by-Step Process</h4>
+          <ol>
+            <li>Convert tuple to list</li>
+            <li>Modify the list</li>
+            <li>Convert back to tuple</li>
+          </ol>
+        </div>
+        <div class="col-md-6">
+          <button class="interactive-button">Show Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python"># Original tuple
+my_tuple = (1, 2, 3)
+
+# Convert to list
+temp_list = list(my_tuple)
+temp_list[1] = 5  # Modify
+
+# Convert back to tuple
+my_tuple = tuple(temp_list)
+print(my_tuple)</code></pre>
+            <p><strong>Output:</strong> <code>(1, 5, 3)</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tuple Methods Section -->
+    <div class="rounded p-3 mb-4">
+      <h3><span class="highlight">3. Tuple Methods</span></h3>
+      <p>Tuples have limited methods since they're immutable:</p>
+      
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>count()</code></td>
+              <td>Returns number of occurrences of a value</td>
+              <td><code>my_tuple.count(2)</code></td>
+            </tr>
+            <tr>
+              <td><code>index()</code></td>
+              <td>Returns index of first occurrence</td>
+              <td><code>my_tuple.index(3)</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>count() Method</h4>
+          <button class="interactive-button">Show Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">numbers = (1, 2, 3, 2, 4, 2)
+print(numbers.count(2))</code></pre>
+            <p><strong>Output:</strong> <code>3</code></p>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <h4>index() Method</h4>
+          <button class="interactive-button">Show Example</button>
+          <div class="hidden mt-3">
+            <pre><code class="language-python">numbers = (10, 20, 30, 40)
+print(numbers.index(30))</code></pre>
+            <p><strong>Output:</strong> <code>2</code></p>
+          </div>
+        </div>
+      </div>
+      <a href="../../Curriculum/level 4.docx" class="btn btn-primary">Learn more</a>
+    </div>
+  </div>
+
+  <!-- Videos -->
+  <h1 class="text-center">Videos</h1>
+  <div id="carouselExampleIndicators" class="carousel slide p-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gwKxpFG_h_8?si=k3XQPA0RHUYODQak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MDR7c5ozo7I?si=ItE_QlZIa_8yQnwz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="carousel-item text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w6hL_dszMxk" title="Python tuples 📋" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Interactive Python -->
+  <section class="my-5 animate-fadein">
+    <iframe src="https://trinket.io/embed/python/2ff9514ea484?runOption=run&start=result&showInstructions=true"
+            width="100%" height="356" frameborder="0" allowfullscreen loading="lazy" title="compiler"></iframe>
+  </section>
+
+  <!-- Navigation -->
+  <section class="d-flex justify-content-center gap-3 my-5">
+    <a href="../lesson2/level4 lesson2.html" class="btn btn-primary" target="_blank">Next</a>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/script level1 lesson2.js"></script>
+</body>
+</html>
